@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morphdeck"
+version = "0.1.0"
+description = "PowerPoint decks built by code or by an AI agent: semantic colour and Morph-linked transitions"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = ["python-pptx>=1.0", "lxml", "pillow"]
+
+[project.optional-dependencies]
+logos = ["cairosvg"]
+dev = ["pytest", "cairosvg"]
+
+[project.scripts]
+morphdeck = "morphdeck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["morphdeck*"]
+
+[tool.setuptools.package-data]
+morphdeck = ["ps/*.ps1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

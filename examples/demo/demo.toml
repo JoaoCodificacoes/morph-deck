@@ -1,0 +1,29 @@
+# The demo deck: the neutral template plus the three threads of this talk.
+[template]
+file = "../../templates/neutral/neutral.pptx"
+
+[layouts]
+cover = 0
+content = 5
+end = 0
+
+[placeholders]
+title = 0
+slide_number = 12
+keep = [1]
+
+[area]
+x = 0.74
+y = 1.75
+w = 11.86
+h = 4.85
+
+[fonts]
+body = "Aptos"
+head = "Aptos Display"
+title_size = 30
+
+[identities]
+requirements = ["C2477F", "F8E4EE", "96305F"]
+data = ["009DE0", "E3F4FC", "0077B6"]
+app = ["0E9AA7", "DCF2F4", "0A7680"]
